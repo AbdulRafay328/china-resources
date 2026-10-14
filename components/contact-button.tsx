@@ -11,9 +11,11 @@ const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encod
 // visitors who don't use Gmail can paste it into their own mail app.
 export function ContactButton({
   className,
+  copiedLabel = "Email copied",
   children,
 }: {
   className?: string;
+  copiedLabel?: string;
   children: React.ReactNode;
 }) {
   const [copied, setCopied] = useState(false);
@@ -45,7 +47,7 @@ export function ContactButton({
         {copied ? (
           <>
             <Check className="size-4" />
-            Email copied
+            {copiedLabel}
           </>
         ) : (
           children

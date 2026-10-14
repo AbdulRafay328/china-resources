@@ -13,7 +13,7 @@ export function SiteHeader() {
         >
           <LogoMark className="h-8 w-auto sm:h-10" />
           <span className="flex flex-col">
-            <span className="font-display text-lg leading-none font-bold tracking-[0.02em] text-white uppercase sm:text-[1.35rem]">
+            <span className="font-display text-lg leading-none font-bold tracking-[0.02em] whitespace-nowrap text-white uppercase sm:text-[1.35rem]">
               China Resources
             </span>
             <span className="mt-1 hidden font-display text-[0.6rem] leading-none font-semibold tracking-[0.24em] text-brand uppercase sm:block">
@@ -21,7 +21,10 @@ export function SiteHeader() {
             </span>
           </span>
         </Link>
-        <ContactButton className="inline-flex items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink transition hover:bg-white sm:px-5">
+        <ContactButton
+          copiedLabel="Copied"
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-sm font-semibold whitespace-nowrap text-ink transition hover:bg-white sm:px-5"
+        >
           Contact
         </ContactButton>
       </div>
