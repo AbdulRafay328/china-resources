@@ -9,14 +9,14 @@ export function SiteHeader() {
         <Link
           href="/"
           aria-label="China Resources & Infrastructure Company, home"
-          className="flex items-center gap-3"
+          className="flex items-center gap-2.5 sm:gap-3"
         >
           <LogoMark className="h-8 w-auto sm:h-10" />
           <span className="flex flex-col">
             <span className="font-display text-lg leading-none font-bold tracking-[0.02em] whitespace-nowrap text-white uppercase sm:text-[1.35rem]">
               China Resources
             </span>
-            <span className="mt-1 hidden font-display text-[0.6rem] leading-none font-semibold tracking-[0.24em] text-brand uppercase sm:block">
+            <span className="mt-1 font-display text-[0.55rem] leading-none font-semibold tracking-[0.12em] whitespace-nowrap text-brand uppercase sm:text-[0.6rem] sm:tracking-[0.24em]">
               &amp; Infrastructure Company
             </span>
           </span>
