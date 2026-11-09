@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL } from "@/lib/contact";
+import { CONTACT_EMAIL, GMAIL_COMPOSE_URL } from "@/lib/contact";
 import { ContactForm } from "./contact-form";
 import { Reveal } from "./reveal";
 import { Mail, MapPin, Phone, User } from "./icons";
@@ -20,7 +20,7 @@ const DETAILS = [
   {
     icon: Mail,
     label: "Email",
-    lines: [{ value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}` }],
+    lines: [{ value: CONTACT_EMAIL, href: GMAIL_COMPOSE_URL }],
   },
   {
     icon: MapPin,
@@ -71,6 +71,12 @@ export function ContactSection() {
                         <a
                           key={line.value}
                           href={line.href}
+                          target={line.href.startsWith("http") ? "_blank" : undefined}
+                          rel={
+                            line.href.startsWith("http")
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
                           className="block text-lg leading-snug font-semibold text-white break-words transition hover:text-brand"
                         >
                           {line.value}

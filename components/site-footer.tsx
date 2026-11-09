@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL } from "@/lib/contact";
+import { CONTACT_EMAIL, GMAIL_COMPOSE_URL } from "@/lib/contact";
 import { LogoMark } from "./logo";
 
 const LINKS = [
@@ -78,7 +78,9 @@ export function SiteFooter() {
               </li>
               <li>
                 <a
-                  href={`mailto:${CONTACT_EMAIL}`}
+                  href={GMAIL_COMPOSE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="break-words text-white/75 transition hover:text-brand"
                 >
                   {CONTACT_EMAIL}
