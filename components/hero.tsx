@@ -22,11 +22,6 @@ export function Hero() {
             global market.
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-            A premier resource procurement and engineering consultancy, closely
-            attuned to the pulse of the global industry.
-          </p>
-
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a
               href="#solutions"

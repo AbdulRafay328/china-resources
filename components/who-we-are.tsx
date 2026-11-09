@@ -51,7 +51,7 @@ export function WhoWeAre() {
           <aside className="overflow-hidden rounded-2xl border border-ink/10 bg-ink text-white shadow-xl shadow-ink/10 transition duration-300 hover:shadow-2xl hover:shadow-ink/20">
             <div className="relative h-56 w-full">
               <Image
-                src="/images/site-team.jpg"
+                src="/images/1.jpg"
                 alt="On-site project team"
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"

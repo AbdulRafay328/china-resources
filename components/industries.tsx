@@ -8,25 +8,25 @@ const INDUSTRIES = [
     icon: Bridge,
     title: "Infrastructure",
     body: "Highways, bridges, ports, railways, and municipal engineering.",
-    img: "/images/infrastructure.jpg",
+    img: "/images/5.jpg",
   },
   {
     icon: Bolt,
     title: "Energy & Power",
     body: "Traditional energy development, renewable energy construction, and power transmission projects.",
-    img: "/images/energy-power.jpg",
+    img: "/images/6.jpg",
   },
   {
     icon: Factory,
     title: "Industrial & Manufacturing",
     body: "Large-scale plant construction, industrial materials, and bulk commodity trading.",
-    img: "/images/industrial-materials.jpg",
+    img: "/images/7.jpg",
   },
   {
     icon: Pickaxe,
     title: "Mining & Resources",
     body: "Equipment and consulting for mineral extraction, material handling, and tailings management systems.",
-    img: "/images/mining-machinery.jpg",
+    img: "/images/8.jpg",
   },
 ];
 

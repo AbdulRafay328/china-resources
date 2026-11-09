@@ -9,21 +9,21 @@ const SOLUTIONS = [
     icon: Blueprint,
     title: "EPC Project Consulting & End-to-End Engineering Solutions",
     body: "We provide professional consulting services covering the entire lifecycle of projects for global project owners. Leveraging our deep understanding of the Chinese engineering sector, we precisely match overseas owners with premier Chinese EPC (Engineering, Procurement, and Construction) contractors and tailored engineering solutions. From feasibility studies and technical scheme optimization in the early stages to technical coordination during construction, we ensure the efficient execution and delivery of projects from planning to completion, helping owners reduce costs and increase efficiency.",
-    img: "/images/engineering-consulting.jpg",
+    img: "/images/2.jpg",
   },
   {
     no: "02",
     icon: Crane,
     title: "Global Infrastructure & Construction Equipment Supply",
     body: "As a reliable equipment sourcing and export agent, we supply comprehensive equipment packages for infrastructure construction, energy development, and bulk material handling, alongside a wide range of heavy construction machinery. Backed by a rigorous quality control system and an efficient supply chain network, we provide end-to-end guarantees, from drawing review, production supervision, and logistics clearance to on-site delivery, ensuring high-performance, reliable equipment is delivered to project sites on time.",
-    img: "/images/equipment-fleet.jpg",
+    img: "/images/3.jpg",
   },
   {
     no: "03",
     icon: Cube,
     title: "Strategic Resource & Industrial Material Allocation",
     body: "We are deeply engaged in the bulk resources and industrial materials market, dedicated to sourcing and providing premium buyers for mineral resources, metals, and industrial raw materials worldwide. Through professional market insights, price trend analysis, and strong industry resource integration, we facilitate efficient and transparent cross-border trade cooperation, optimize resource allocation, and help our clients maximize commercial value.",
-    img: "/images/port-shipping.jpg",
+    img: "/images/4.jpg",
   },
 ];
 
