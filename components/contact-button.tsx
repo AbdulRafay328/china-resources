@@ -1,11 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { CONTACT_EMAIL, GMAIL_COMPOSE_URL } from "@/lib/contact";
 import { Check } from "./icons";
-
-export const CONTACT_EMAIL = "chang@creinfra.com";
-
-const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONTACT_EMAIL)}`;
 
 // Opens a new Gmail message in a new tab and also copies the address, so
 // visitors who don't use Gmail can paste it into their own mail app.

@@ -10,6 +10,7 @@
 
   --animate-rise: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
   --animate-fade: fade 1.4s ease-out both;
+  --animate-float: float 7s ease-in-out infinite;
 
   @keyframes rise {
     from {
@@ -21,6 +22,16 @@
   @keyframes fade {
     from {
       opacity: 0;
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
     }
   }
 }
@@ -45,7 +56,53 @@
   );
 }
 
+/* Faint blueprint grid tuned for light (paper) sections. */
+@utility blueprint-grid-ink {
+  background-image:
+    linear-gradient(to right, rgb(29 33 38 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(29 33 38 / 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Offset anchor targets so the sticky header never covers a heading. */
+  scroll-padding-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   background: var(--color-paper);
   color: var(--color-ink);
+}
+
+/* Scroll-reveal (progressive enhancement).
+   Content is fully visible by default. Only once the client script adds
+   `reveal-ready` to <html> do reveal items start hidden and animate in as
+   they enter the viewport — so nothing is hidden when JS is unavailable. */
+.reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-ready [data-reveal][data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-ready [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }

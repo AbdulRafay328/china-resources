@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | China Resources & Infrastructure Company",
   },
   description:
-    "China Resources & Infrastructure Company (CRI). Our new website is under construction. Get in touch with our team.",
+    "China Resources & Infrastructure Co., Ltd. (CRI). A premier resource procurement and engineering consultancy providing end-to-end engineering consulting, equipment sourcing, heavy machinery export, and resource allocation for global infrastructure, energy, and industrial projects.",
 };
 
 export const viewport: Viewport = {
@@ -36,6 +36,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${barlow.variable} ${barlowCondensed.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{document.documentElement.classList.add('reveal-ready')}catch(e){}",
+          }}
+        />
         <SiteHeader />
         <main className="flex flex-1 flex-col">{children}</main>
         <SiteFooter />
